@@ -29,8 +29,8 @@ componentDidMount: function () {
     </div>
   );
 
-  var $modal = $(reactDomServer.renderToString(modalMarkup));
-  $(ReactDOM.findDomNode(this)).html($modal);
+  var $modal = $(ReactDOMServer.renderToString(modalMarkup));
+  $(ReactDOM.findDOMNode(this)).html($modal);
 
   var modal = new Foundation.Reveal($('#error-modal'));
   modal.open();

@@ -47,7 +47,7 @@ var Weather = React.createClass({
           this.handleSearch(location);
           window.location.hash = '#/';
     }
-  },
+  }, 
 
   render: function () {
     var {isLoading, temp, location, errorMessage} = this.state;
